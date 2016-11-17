@@ -1,0 +1,3 @@
+setwd("~/lending-club-loan-data")
+loanbook <- read.csv("loan.csv", stringsAsFactors = FALSE)
+
