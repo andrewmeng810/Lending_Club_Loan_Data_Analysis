@@ -1,5 +1,5 @@
 
-setwd("~/Downloads/lending-club-loan-data")
+setwd("~/lending-club-loan-data")
 loanbook <- read.csv("loan.csv", stringsAsFactors = FALSE)
 
 # Check the number of observations and features
