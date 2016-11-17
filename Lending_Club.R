@@ -84,7 +84,9 @@ amount_table = loanbook %>%
   summarise(Amount = sum(loan_amnt))
 
 summary(amount_table)
-dev.off()
+
+#  dev.off() if there is an error in plotting, try dev.off()
+
 line_plane = ggplot(amount_table, aes(x = issue_d, y = Amount))
 line_plane + geom_line() + 
   labs(title = "Loan Book growth by issue date", 
